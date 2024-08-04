@@ -1,0 +1,12 @@
+:root{
+--size-title:70px;
+--size-info:30px;
+--size-elem:20px;
+--color-white: white;
+--color-gold: rgb(226, 240, 99);
+--color-black: rgb(30, 30, 30);
+}
+@media screen and (max-width: 1024px;){
+
+    
+}
