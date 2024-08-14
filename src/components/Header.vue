@@ -1,5 +1,5 @@
 <template>
-<header>шапка</header>
+<header>header</header>
 </template>
 
 <style lang = "scss">

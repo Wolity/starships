@@ -1,12 +1,21 @@
-:root{
---size-title:70px;
---size-info:30px;
---size-elem:20px;
---color-white: white;
---color-gold: rgb(226, 240, 99);
---color-black: rgb(30, 30, 30);
+:root {
+  --size-title: 70px;
+  --size-text: 30px;
+  --size-elem: 20px;
+  --color-white: white;
+  --color-gold: rgb(226, 240, 99);
+  --color-black: rgb(30, 30, 30);
 }
-@media screen and (max-width: 1024px;){
-
-    
+@media screen and (max-width: 1024px) {
+  :root {
+    --size-title: 45px;
+    --size-text: 28px;
+  }
+}
+@media screen and (max-width: 450px){
+    :root{
+        --size-title: 28px;
+        --size-text: 22px;
+        --size-elem: 18px;
+    }
 }
