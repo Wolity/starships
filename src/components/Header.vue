@@ -1,9 +1,9 @@
 <template>
   <header class="header">
-    <a class="header_left">StarDB</a>
+    <router-link to="/" class="header_left">StarDB</router-link>
     <nav class="header_right">
-      <a class="right_link">Form</a>
-      <a class="right_link">Starships</a>
+      <router-link to="/search" class="right_link">Form</router-link>
+      <router-link to="/starships" class="right_link">Starships</router-link>
     </nav>
   </header>
 </template>
@@ -17,11 +17,21 @@
   align-items: center;
   .header_left {
     font-size:var(--size-text);
+    opacity: 1;
+    transition: all 0.3s;
+    &:hover{
+      opacity: 0.7;
+    }
   }
   .header_right {
     .right_link {
+        opacity: 1;
         font-size: var(--size-elem);
         margin-left: 30px;
+        transition: all 0.3s;
+        &:hover{
+          opacity: 0.7;
+        }
     }
   }
 }
