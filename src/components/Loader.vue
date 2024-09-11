@@ -32,7 +32,7 @@
     left: 50%;
     display: inline-block;
     transform: translate(-50%, -50%);
-    color: rgb(170, 179, 255);
+    color: rgb(181, 181, 181);
   }
 }
 .lds-spinner,

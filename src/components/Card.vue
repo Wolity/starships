@@ -1,3 +1,8 @@
+<script setup>
+defineProps({
+  d: Object,
+});
+</script>
 <template>
   <div class="card">
     <img
@@ -6,7 +11,7 @@
     />
     <nav class="card_block">
       <h2>Name:</h2>
-      <h2>корабль</h2>
+      <h2>{{ d.name }}</h2>
     </nav>
     <nav class="card_block">
       <h2>Created:</h2>
@@ -20,7 +25,7 @@
 </template>
 <style scoped lang="scss">
 .card {
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background: var(--color-white);
