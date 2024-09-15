@@ -20,9 +20,9 @@ async function getStarShip() {
 
 <template>
   <section>
-
     <Loader v-if="loader" />
-    <Card v-for="(item, i) in starship" :key="i" :d="item" v-else />
+    <Card v-for="(item, i) in starship" :key="i" :id="item.url.split('/')[5]"
+    :card="item" v-else />
   </section>
 </template>
 <style scoped lang="scss">
@@ -31,5 +31,17 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
+}
+@media screen and (max-width: 1024px) {
+  section {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 720px) {
+  section {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+  }
 }
 </style>
